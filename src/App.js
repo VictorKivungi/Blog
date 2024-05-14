@@ -1,14 +1,14 @@
 import './App.css';
 import NavBar from './components/Navbar.js';
 import {BrowserRouter as Router,  Route, Switch} from 'react-router-dom';
-import Home from "./components/Home.js";
+// import Home from "./components/Home.js";
 import Create from "./components/Create.js";
 
 function App() {
   return (
     <Router>
       <div className='App'>
-        <NavBar />
+        <NavBar/>
 
             <div className='content'>
 
@@ -19,7 +19,7 @@ function App() {
                             </Route>
 
                             <Route exact path="/Create">
-                              Create
+                              <Create/>
                             </Route>
 
                     </Switch>
