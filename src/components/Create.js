@@ -68,9 +68,9 @@ function Create () {
 
 
     return (
-        <div>
+        <div onSubmit={handleSubmit}>
 
-            <Form onSubmit={handleSubmit}>
+            <Form >
                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                     <Form.Label>Title:</Form.Label>
                     <Form.Control name="title" type="text" onChange={handleInput} ></Form.Control>
@@ -84,7 +84,7 @@ function Create () {
 
                 </Form.Group>
 
-                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                     <Form.Label>Body:</Form.Label>
                     <Form.Control as="textarea" name='body' type="text" onChange={handleInput}></Form.Control>
 

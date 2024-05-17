@@ -1,1 +1,10 @@
-{}
+{
+  "blogs": [
+    {
+      "id": "f7aa",
+      "title": "Head",
+      "author": "Victor",
+      "body": "Similarly to setting your toast message’s position, you can use React-Toastify to specify different types of toast messages to better understand the information displayed and improve user experience.\n\nThis technique uses different styling for each message type to make it easier to quickly understand the information and its intent. For example, a red-colored toast UI typically implies a warning or error message, just as a green-colored message typically implies a successful response.\n\nYou can use specific toast functions for the different toast message variants. Add the following changes in the click event handler in your App.js file:"
+    }
+  ]
+}
