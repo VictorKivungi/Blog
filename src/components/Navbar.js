@@ -18,6 +18,9 @@ function NavBar(){
                     <li class="nav-item">
                     <Link to="/Create" >Create</Link>
                     </li>
+                    <li class="nav-item">
+                    <Link to="/BlogDetails" >Details</Link>
+                    </li>
                     
                 </ul>
                 </div>

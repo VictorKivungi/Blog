@@ -1,4 +1,7 @@
-import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import React from "react";
+import { useHistory, useParams } from "react-router-dom/cjs/react-router-dom.min";
+import useFetch from './useFetch';
+import { withRouter } from "react-router";
 import { Button } from "react-bootstrap";
 import axios from "axios";
 
@@ -22,7 +25,12 @@ const BlogDetails = () => {
             <div className="details">
 
                 (blogs && {
-                    
+                    <article>
+                        <h3>{blogs.title}</h3>
+                        <p>Done by: {blogs.author}</p>
+                        <div>{blogs.body}</div>
+                        <Button onClick={handleDelete} variant="danger"></Button>
+                    </article>
                 })
 
 
@@ -31,3 +39,5 @@ const BlogDetails = () => {
         )
 
 }
+
+export default withRouter(BlogDetails);

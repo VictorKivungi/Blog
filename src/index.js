@@ -5,12 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {SSRProvider} from '@react-aria/ssr'; 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <SSRProvider>
+    <React.StrictMode>
+  <App />
+</React.StrictMode></SSRProvider>
+  
 );
 
 // If you want to start measuring performance in your app, pass a function
